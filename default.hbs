@@ -14,6 +14,25 @@
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
+    {{!-- Add support to fontawezome --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style>
+        .site-header {
+        	background: #11564E;
+    	}
+        .site-footer {
+        	background: #11564E;
+        }
+        @media (max-width: 500px) {
+        	.site-title {
+            	font-size: 3rem !important;
+        	}
+        }
+        .site-title {
+            font-size: 6.8rem;
+        }
+    </style>
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
@@ -31,9 +50,9 @@
                 <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <nav class="site-footer-nav">
                     <a href="{{@site.url}}">Latest Posts</a>
-                    {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
+                    {{#if @site.facebook}}<a href="https://www.linkedin.com/in/juan-carlos-hernandez-ramos-418148150/" target="_blank" rel="noopener">Linked In</a>{{/if}}
                     {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    <a href="https://judicapo.com" target="_blank" rel="noopener">GitHub</a>
                 </nav>
             </div>
         </footer>
